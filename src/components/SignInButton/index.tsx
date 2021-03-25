@@ -13,7 +13,7 @@ export function SignInButton() {
         className={styles.signInButton}
       >
         <FaGithub color="#04D361" />
-          {session.user.name}
+        {session.user.name}
         <FiX 
           className={styles.closeIcon} 
           color="#737380" 
