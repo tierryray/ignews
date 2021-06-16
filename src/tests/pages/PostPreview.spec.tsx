@@ -1,10 +1,10 @@
 import Post, { getStaticProps } from '../../pages/posts/preview/[slug]';
-import { getSession, useSession } from 'next-auth/client';
 import { render, screen } from "@testing-library/react";
 
 import { getPrismicClient } from '../../services/prismic';
 import { mocked } from 'ts-jest/utils';
 import { useRouter } from 'next/router';
+import { useSession } from 'next-auth/client';
 
 const post = { slug: 'my-new-post', title: 'My New Post', content: '<p>Post excerpt</p>', updatedAt: '10 de Abril' };
 
