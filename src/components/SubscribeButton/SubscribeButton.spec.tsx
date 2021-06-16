@@ -53,7 +53,7 @@ describe('SubscribeButton component', () => {
         activeSubscription: 'fake-active-subscription'
       }, 
       false
-    ])
+    ] as any)
 
     useRouterMocked.mockReturnValueOnce({
       push: pushMock
